@@ -1,5 +1,5 @@
 [![GoDoc](https://img.shields.io/badge/go.dev-reference-blue)](https://pkg.go.dev/github.com/chmike/emailaddress)
-[![Build](https://travis-ci.org/chmike/emailaddress.svg?branch=master)](https://travis-ci.org/chmike/emailaddress?branch=master)
+![Build](https://github.com/chmike/emailaddress/actions/workflows/workflow.yaml/badge.svg)
 [![Coverage](https://coveralls.io/repos/github/chmike/emailaddress/badge.svg?branch=master)](https://coveralls.io/github/chmike/emailaddress?branch=master)
 [![Go Report](https://goreportcard.com/badge/github.com/chmike/emailaddress)](https://goreportcard.com/report/github.com/chmike/emailaddress)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
