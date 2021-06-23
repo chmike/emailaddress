@@ -3,7 +3,7 @@
 [![Coverage](https://coveralls.io/repos/github/chmike/emailaddresse/badge.svg?branch=master)](https://coveralls.io/github/chmike/emailaddresse?branch=master)
 [![Go Report](https://goreportcard.com/badge/github.com/chmike/emailaddresse)](https://goreportcard.com/report/github.com/chmike/emailaddresse)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
-![release](https://img.shields.io/github/release/chmike/emailaddresse/all.svg)
+![release](https://img.shields.io/github/release/chmike/emailaddress/all.svg)
 
 # emailaddress.Check()
 
