@@ -1,7 +1,6 @@
 [![GoDoc](https://img.shields.io/badge/go.dev-reference-blue)](https://pkg.go.dev/github.com/chmike/emailaddress)
 ![Build](https://github.com/chmike/emailaddress/actions/workflows/workflow.yaml/badge.svg)
-[![Coverage](https://coveralls.io/repos/github/chmike/emailaddress/badge.svg?branch=master)](https://coveralls.io/github/chmike/emailaddress?branch=master)
-[![Coverage](https://codecov.io/gh/chmike/emailaddress/branch/master/graph/badge.svg)](https://codecov.io/gh/chmike/emailaddress)
+[![codecov](https://codecov.io/gh/chmike/emailaddress/branch/master/graph/badge.svg?token=9XNNVJXV1E)](https://codecov.io/gh/chmike/emailaddress)
 [![Go Report](https://goreportcard.com/badge/github.com/chmike/emailaddress)](https://goreportcard.com/report/github.com/chmike/emailaddress)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
 ![release](https://img.shields.io/github/release/chmike/emailaddress/all.svg)
