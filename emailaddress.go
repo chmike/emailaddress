@@ -3,6 +3,7 @@ package emailaddress
 import (
 	"errors"
 	"fmt"
+	"net"
 	"strings"
 	"unicode/utf8"
 
@@ -87,7 +88,7 @@ func Check(email string) error {
 		if email[0] == '.' || localPart[len(email)-1] == '.' {
 			return errors.New("local part can't start or end with '.'")
 		}
-		if strings.Index(email, "..") != -1 {
+		if strings.Contains(email, "..") {
 			return errors.New("local part can't contain '..'")
 		}
 		for _, c := range localPart {
@@ -96,6 +97,22 @@ func Check(email string) error {
 				return fmt.Errorf("invalid character '%s' in local part", string(c))
 			}
 		}
+	}
+	return nil
+}
+
+// CheckWithDNS checks the email validity and also checks that the domain after the last @
+// is an existing domain that acceptes mails.
+func CheckWithDNS(email string) error {
+	if err := Check(email); err != nil {
+		return err
+	}
+	pos := strings.LastIndexByte(email, '@')
+	if pos == -1 {
+		return errors.New("email without domain")
+	}
+	if _, err := net.LookupMX(email[pos+1:]); err != nil {
+		return err
 	}
 	return nil
 }

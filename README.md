@@ -7,11 +7,15 @@
 
 # emailaddress.Check()
 
-This package contains a single function that checks the syntactic validity of an email address.
+This package contains two functions to check email addresses. 
 
 An email address name must respect rules presented in [https://en.wikipedia.org/wiki/Email_address](https://en.wikipedia.org/wiki/Email_address).
 
 The `emailaddress.Check` function ensures that the email address respect those rules. If not, it returns an error explaining the detected problem.
+This function accepts emails without a domain like "root" which is valid on unix systems.
+
+The `emailaddress.CheckWithDNS()` calls `Check` and also checks that the domain after the last @ is an existing domain accepting emails. With 
+this call the email "root" is invalid since it has no domain accepting emails.
 
 ## Prerequisites
 

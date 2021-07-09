@@ -48,3 +48,19 @@ func TestCheck(t *testing.T) {
 		}
 	}
 }
+
+func TestCheckWithDNS(t *testing.T) {
+	if err := CheckWithDNS(""); err == nil {
+		t.Error("unexpected nil error")
+	}
+	if err := CheckWithDNS("toto"); err == nil {
+		t.Error("unexpected nil error")
+	}
+	if err := CheckWithDNS("toto@example.com"); err == nil {
+		t.Error("unexpected nil error")
+	}
+
+	if err := CheckWithDNS("toto@gmail.com"); err != nil {
+		t.Error("unexpected error:", err)
+	}
+}
