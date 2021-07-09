@@ -56,3 +56,8 @@ jobs:
     # Upload coverage
     - name: Upload coverage to Codecov
       run: bash <(curl -s https://codecov.io/bash)
+
+    # Force update go.pkg.dev documentation
+    - name: Force update go.pkg.dev
+      run: |
+        curl https://proxy.golang.org/github.com/chmike/emailaddress/@latest
