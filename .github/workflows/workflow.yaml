@@ -60,4 +60,4 @@ jobs:
     # Force update go.pkg.dev documentation
     - name: Force update go.pkg.dev
       run: |
-        curl https://proxy.golang.org/github.com/chmike/emailaddress/@latest
+        curl https://proxy.golang.org/github.com/${{github.repository}}/@latest
