@@ -56,7 +56,7 @@ func TestCheckWithDNS(t *testing.T) {
 	if err := CheckWithDNS("toto"); err == nil {
 		t.Error("unexpected nil error")
 	}
-	if err := CheckWithDNS("toto@nonexistinigdomain.com"); err == nil {
+	if err := CheckWithDNS("toto@nonexistingdomain.com"); err == nil {
 		t.Error("unexpected nil error")
 	}
 	if err := CheckWithDNS("toto@gmail.com"); err != nil {
